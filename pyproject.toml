@@ -1,0 +1,15 @@
+[build-system]
+requires = ["setuptools>=61.0.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "mbw"
+version = "2025.0.1"
+description = "A minimalistic python package to get interactive plots while working with pycharm without imposing a backend for other users."
+authors = [{ name = 'Emmanuel Cieren', email = 'emmanuel.cieren@mews-labs.com' }]
+readme = "README.md"
+requires-python = '>=3.9'
+
+dependencies = [
+  "matplotlib",
+]
