@@ -12,9 +12,10 @@ pip install mbw@git+https://github.com/eurobios-mews-labs/mbw.git
 
 ```python
 import matplotlib.pyplot as plt
-import mbw
 import numpy as np
+from mbw import mbw
 
+mbw()
 plt.figure()
 x = np.linspace(0.0, np.pi, 21)
 y = np.sin(x)
