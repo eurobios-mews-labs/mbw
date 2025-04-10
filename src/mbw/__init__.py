@@ -1,6 +1,12 @@
-import os
+def mbw():
 
-if "PYCHARM_HOSTED" in os.environ.keys() and os.environ["PYCHARM_HOSTED"] == "1":
-    import matplotlib
-    if matplotlib.get_backend() != "TkAgg":
-        matplotlib.use("TkAgg")
+    from os import environ
+
+    v = "PYCHARM_HOSTED"
+    b = "TkAgg"
+
+    if v in environ.keys() and environ[v] == "1":
+        import matplotlib
+
+        if matplotlib.get_backend() != b:
+            matplotlib.use(b)
